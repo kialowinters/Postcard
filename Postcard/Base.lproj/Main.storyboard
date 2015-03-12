@@ -104,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQX-N8-rcI"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzg-UV-v1l">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="164" width="260" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="NL8-Nf-Et3"/>
                                 <exclude reference="RbD-El-Ddx"/>
                                 <exclude reference="rPW-it-X8Z"/>
+                                <exclude reference="yzg-UV-v1l"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +132,7 @@
                                 <include reference="NL8-Nf-Et3"/>
                                 <include reference="RbD-El-Ddx"/>
                                 <include reference="rPW-it-X8Z"/>
+                                <include reference="yzg-UV-v1l"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <barButtonItem key="rightBarButtonItem" title="View Message" id="hH9-Ha-mRc"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="displayNameMessage" destination="yzg-UV-v1l" id="nE3-tW-Hbx"/>
                         <outlet property="enterMessageTextField" destination="NL8-Nf-Et3" id="PN4-pG-EeO"/>
                         <outlet property="enterNameTextField" destination="aKQ-iD-puk" id="5sd-dW-WaK"/>
                         <outlet property="mailButton" destination="rPW-it-X8Z" id="VLS-gl-Sbh"/>
